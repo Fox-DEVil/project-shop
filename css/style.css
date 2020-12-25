@@ -705,9 +705,11 @@ padding-top: 28px;
    align-items: center
 }
 
+/* Registration ========================= */
 
-
-
+.visual-item__catalog {
+   visibility: hidden;
+}
 
 
 
