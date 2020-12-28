@@ -11,10 +11,9 @@
     </head>
     <body>
         <header class="header">
-            <section class="header__container container">
-                <h2 class="visually-hidden">Шапка сайта</h2>
+            <div class="header__container container">
                 <div class="header__logo-container">
-                    <a href="registration.html"><img src="img/logo.png" alt="логотип" class="header__logo" width="44" height="38"></a>
+                    <a href="index.html"><img src="img/logo.png" alt="логотип" class="header__logo" width="44" height="38"></a>
                     <div class="header__search">
                         <button class="header__button">
                             <svg width="27" height="28" viewBox="0 0 27 28" xmlns="http://www.w3.org/2000/svg">
@@ -46,131 +45,57 @@
                         </button>
                     </li>
                 </ul>
-            </section>
+            </div>
         </header>
         <main>
-            <section class="intra">
-                <img class="intra__img" src="img/inrta.jpg" alt="мужчина в пальто" width="800" height="765">
-                <div class="intra__content">
-                    <h1 class="intra__content-title">The brand<br><span class="intra__content-span"> of luxerious fashion</span></h1>
+            <section class="catalog__navigation">
+                <div class="catalog__navigation-content container">
+                    <h1 class="catalog__navigation-title">registration</h1>
+                    <ul class="catalog__navigation-item visual-item__catalog">
+                        <li class="catalog__navigation-list"><a class="catalog__navigation-link" href="index.html">home<span class="catalog__navigation-span">/</span></a></li>
+                        <li class="catalog__navigation-list"><a class="catalog__navigation-link" href="#">men<span class="catalog__navigation-span">/</span></a></li>
+                        <li class="catalog__navigation-list"><a class="catalog__navigation-link catalog__navigation-list--active" href="#">new arrivals</a></li>
+                    </ul>
                 </div>
-                <section class="intra__menu">
-                    <h2 class="intra__menu-title">menu</h2>
-                    <ul class="intra__menu-item">
-                        <li><a class="intra__menu-mainlink" href="#">man</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">accessories</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">bags</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">denim</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">t-shirts</a></li>
-                    </ul>
-                    <ul class="intra__menu-item">
-                        <li><a class="intra__menu-mainlink" href="#">woman</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">accessories</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link"  href="#">jackets & coats</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">polos</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">t-shirts</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">shirts</a></li>
-                    </ul>
-                    <ul class="intra__menu-item">
-                        <li><a class="intra__menu-mainlink" href="#">kids</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">accessories</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">jackets & coats</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">polos</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">t-shirts</a></li>
-                        <li class="intra__menu-list"><a class="intra__menu-link" href="#">bags</a></li>
+            </section> <!-- /Catalog navigation -->
+            <section class="registration  container">
+                <h2 class="visually-hidden">Регистрация</h2>
+                <div class="registration-content">
+                    <form class="registration-form" action="/" method="get">
+                        <fieldset class="registration-fieldset registration__input">
+                            <legend class="registration-legend">your name</legend>
+                            <input class="registration__input-name" type="text" placeholder="First name" name="firstname">
+                            <input class="registration__input-name" type="text" placeholder="Second name" name="secondname">
+                            <input class="registration__input-sex" type="radio" name="sex" id="male" value="male">
+                            <label class="registration__label-sex"  for="male">male</label>
+                            <input class="registration__input-sex" type="radio" name="sex" id="female" value="female">
+                            <label class="registration__label-sex" for="female">female</label>
+                        </fieldset>
+                        <fieldset class="registration-fieldset registration__login">
+                            <legend class="registration-legend">Login details</legend>
+                            <input class="registration__input-name" type="email" placeholder="Email" name="email">
+                            <input class="registration__input-name" type="password" placeholder="Password" name="password">
+                        </fieldset>
+                        <p class="registration-notification">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                        <button class="registration-btn button__svg" type="button">join now
+                            <svg class="button__svg" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
+                                <path clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
+                            </svg>
+                        </button>
+                    </form>   
+                </div>
+                <section class="registration__perks">
+                    <h2 class="registration__perks-title">loyalty has its perks</h2>
+                    <p class="registration__perks-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                    <ul class="registration__perks-item">
+                        <li class="registration__perks-list">15% off welcome offer</li>
+                        <li class="registration__perks-list">Free shipping, returns and exchanges on all orders</li>
+                        <li class="registration__perks-list">$10 off a purchase on your birthday</li>
+                        <li class="registration__perks-list">Early access to products</li>
+                        <li class="registration__perks-list">Exclusive offers & rewards</li>
                     </ul>
                 </section>
-            </section> <!-- /  Intra -->
-            <section class="stock container">
-                <h2 class="visually-hidden">Акции</h2>
-                <ul class="stock__list">
-                    <li class="stock__item">
-                        <p class="stock__item-name">30% off</p>
-                        <p class="stok__item-category">for women</p>
-                    </li>
-                    <li class="stock__item2">
-                        <p class="stock__item-name">hot deal</p>
-                        <p class="stok__item-category">for men</p>
-                    </li>
-                    <li class="stock__item3">
-                        <p class="stock__item-name">new arrivals</p>
-                        <p class="stok__item-category">for kids</p>
-                    </li>
-                    <li class="stock__item4">
-                        <p class="stock__item-name last-item">luxirous & trandy</p>
-                        <p class="stok__item-category">accesories</p>
-                    </li>
-                </ul>
-            </section> <!-- /Stock -->
-            <section class="popular container">
-                <h2 class="popular__title">fetured items</h2>
-                <p class="popular__subtitle">Shop for items based on what we featured in this week</p>
-                <ul class="popular__catalog exhibition">
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item1.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item1.jpg" alt="exhibition-img-1" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item2.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item2.jpg" alt="exhibition-img-2" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item3.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item3.jpg" alt="exhibition-img-3" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item4.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item4.jpg" alt="exhibition-img-4" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item5.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item5.jpg" alt="exhibition-img-5" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                    <li class="exhibition-item">
-                        <a class="exhibition-link" href="img/item6.jpg" target="_blank" title="Нажмите, для просмотра в полном размере"><img src="img/item6.jpg" alt="exhibition-img-6" width="360" height="420"></a>
-                        <a class="exhibition-addlink" href="#"><img src="img/cart-btn.png" alt="cart-button"><span class="exhibition-addtext">Add to Cart</span></a>
-                        <a class="exhibition__link-title" href="#">ellery x m'o capsule</a>
-                        <p class="exhibition-text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                        <p class="exhibition-price">$52.00</p>
-                    </li>
-                </ul>
-                <a class="popular__more" href="catalog.html">browse all product</a>
-            </section>
-            <!-- / Popular -->
-            <section class="services">
-                <h2 class="visually-hidden">Услуги</h2>
-                <ul class="services__catalog container">
-                    <li class="services__catalog-item">
-                        <img class="services__catalog-img" src="img/delivery.png" alt="Доставка">
-                        <h3 class="services__catalog-title">free delivery</h3>
-                        <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
-                    </li>
-                    <li class="services__catalog-item">
-                        <img class="services__catalog-img2" src="img/sales.png" alt="Распродажа">
-                        <h3 class="services__catalog-title">sales & discounts</h3>
-                        <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
-                    </li>
-                    <li class="services__catalog-item">
-                        <img class="services__catalog-img3" src="img/quality.png" alt="Гарантия">
-                        <h3 class="services__catalog-title">quality assurance</h3>
-                        <p class="services__catalog-text">Worldwide delivery on all. Authorit tively morph<br> next-generation innov tion with extensive models.</p>
-                    </li>
-                </ul>
             </section>
         </main>
         <footer class="footer">

@@ -371,8 +371,10 @@ body {
 }
 
 .popular__more:hover {
-   box-shadow: 2px 2px 2px #FF6A6A;
+   color: #FFF;
+   background: #FF6A6A;
    transition: .2s linear;
+   cursor: pointer;
 }
 
 /*Services ===============>*/
@@ -705,10 +707,179 @@ padding-top: 28px;
    align-items: center
 }
 
+/* Registration ========================= */
 
+.visual-item__catalog {
+   visibility: hidden;
+}
 
+.registration {
+   display: flex;
+   justify-content: space-between;
+}
 
+.registration-content {
+   width: 360px;
+}
 
+.registration-form {
+   margin-top: 64px;
+}
 
+.registration-fieldset {
+   border: none;
+   text-transform: capitalize;
+}
+
+.registration-legend {
+   font-weight: 300;
+   line-height: 1.2;
+   font-size: 16px;
+   color: #222;
+}
+
+.registration__input-name {
+   padding: 13px 16px;
+   margin-top: 20px;
+   font-family: 'Lato', 'Arial', sans-serif;
+   width: 360px;
+   display: block;
+   font-weight: 300;
+   line-height: 1.2;
+   font-size: 13px;
+   /* color: #B1B1B1; */
+   color: #222;
+   border: none;
+   outline: 1px solid #A4A4A4;
+}
+.registration__input-name:hover,
+.registration__input-name:focus,
+.registration__input-name:active {
+   background: rgb(201, 230, 241);
+   transition: .2s linear;
+}
+
+.registration__input-sex {
+   display: none;
+}
+
+.registration__label-sex {
+   position: relative;
+   margin-top: 33.5px;
+   display: inline-block;
+   margin-left: 47px;
+   font-weight: 300;
+   line-height: 1.2;
+   font-size: 11px;
+   color: #000;
+   text-transform: capitalize;
+}
+
+.registration__label-sex::before {
+   position: absolute;
+   content: "";
+   left: -27px;
+   top: -2px;
+   border: 1px solid #A4A4A4;
+   border-radius: 50%;
+   width: 16px;
+   height: 16px;
+}
+
+.registration__label-sex:nth-child(5) {
+   margin-left: 27px;
+}
+
+.registration__input-sex:checked+.registration__label-sex:before {
+   background: rgb(0, 0, 0);
+}
+
+.registration__login {
+   margin-top: 34px;
+}
+
+.registration-notification {
+   margin: 15px 0 39px 0;
+   font-size: 13px;
+   line-height: 1.2;
+   color: #B1B1B1;
+   font-weight: 300;
+}
+
+.registration-btn {
+   display: block;
+   width: 167px;
+   margin-bottom: 96px;
+   font-family: 'Lato', 'Arial', sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   background: #F16D7F;
+   color: #fff;
+   padding: 16px 20px 17px 29px;
+   border: none;
+   outline: 1px solid #FFF;
+}
+
+.button__svg:nth-child(1) {
+   margin-left: 20px; 
+   fill: #fff;
+}
+
+.registration-btn:hover {
+   color: #FF6A6A;
+   background: #fff;
+   transition: .2s linear;
+   cursor: pointer;
+   outline: 1px solid #FF6A6A;
+   transition: .2s linear;
+}
+
+.registration-btn:hover .button__svg {
+   fill: #FF6A6A;
+   transition: .1s linear;
+}
+
+.registration__perks {
+   width: 652px;
+   margin-top: 64px;
+}
+
+.registration__perks-title {
+   font-size: 24px;
+   line-height: 1.2;
+   text-transform: uppercase;
+   color: #000;
+   font-weight: 300;
+}
+
+.registration__perks-text {
+   margin-top: 22px;
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 300;
+}
+
+.registration__perks-list {
+   position: relative;
+   font-size: 24px;
+   line-height: 1.2;
+   font-weight: 300;
+   margin-top: 16px;
+   margin-left: 39px;
+   padding-left: 4px;
+}
+
+.registration__perks-list:first-child {
+   margin-top: 21px;
+}
+
+.registration__perks-list::before {
+   display: block;
+   position: absolute;
+   content: url(../img/checkmark.png);
+   left: -33px;
+}
 
 
